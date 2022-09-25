@@ -1,0 +1,69 @@
+body {
+    background-color: LightSteelBlue;
+    color: #555555 ;
+    font-family: 'San Francisco', 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+    line-height: 1.5em;
+}
+
+h1 {
+    padding: 10px;
+    color: goldenrod;
+    font-family: 'Bodoni MT Black', sans-serif;
+    font-size: 40px;
+    font-style: italic;
+    line-height: 1em;
+}
+
+p {
+    padding: 5px 10px 15px;
+    /* margin: 10px 10px; */
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    margin: 0px 10px 10px;
+    border-radius: 15px;
+}
+
+button:hover {
+    background-color: #555555;
+}
+
+button:active {
+    background-color: #fff;
+}
+
+.box1 {
+    background-color:antiquewhite;
+    color: royalblue;
+    font-size: 22px;
+    border: 5px #000000 solid;
+    border-top: 10px green outset;
+}
+
+.box1 h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, Airal, sans-serif;
+    font-style: italic;
+    font-weight: 2000;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    word-spacing: 2em;
+}
+
+.box2 {
+    border: 5px darkgrey dotted;
+    border-radius: 25px;
+    margin: 20px 0px;
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.list li {
+    list-style-type: disc;
+    list-style-image: url('../resources/icons/check-circle-fill.png');
+}

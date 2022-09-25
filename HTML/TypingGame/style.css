@@ -1,0 +1,14 @@
+.highlight {
+    background-color: yellow;
+}
+
+.error {
+    background-color: lightcoral;
+    border: red;
+}
+
+#quote {
+    font: "Times New Roman";
+    font-size: 24px;
+    font-weight: bold;
+}
