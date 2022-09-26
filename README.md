@@ -1,2 +1,1 @@
-# Front Study
-
+# Web Development Study
