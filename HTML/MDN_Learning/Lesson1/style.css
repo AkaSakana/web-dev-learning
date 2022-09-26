@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "Typography";
+  src: url(fonts/Typography.otf);
+}
+
+h1 {
+  font-family: 'Typography';
+  font-size: 42px;
+}
+
+html {
+  background-color: #747d8c;
+}
+
+p, li {
+  font-family: "Georgia", "苹方";
+}
+
+body {
+  width: 600px;
+  margin: 0 auto;
+  border: 5px solid black;
+  padding: 10px 20px;
+  background-color: #df474f;
+}
+
+pre {
+  font-family: "Fira Code";
+  font-size: 10px;
+  background-color: #2C3A47;
+  color: rgb(171, 178, 191);
+}
+
+code, samp {
+  font-family: "Fira Code";
+  font-size: 10px;
+}
+
+kbd {
+  font-family: "Fira Code";
+  font-size: 12px;
+  color: rgb(38, 115, 231);
+}
