@@ -41,3 +41,16 @@ kbd {
   font-size: 12px;
   color: rgb(38, 115, 231);
 }
+
+footer {
+  text-align: center;
+}
+
+article {
+  background-color: #747d8c;
+  border: 2px solid black;
+}
+
+article p {
+  text-indent: 2em;
+}
