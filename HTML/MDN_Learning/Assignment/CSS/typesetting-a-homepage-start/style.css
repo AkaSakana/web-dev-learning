@@ -1,0 +1,146 @@
+/* General setup */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+
+html {
+  font-family: 'Alkalami', serif;
+  font-size: 10px;
+}
+
+h1, h2 {
+  font-family: 'Ubuntu', sans-serif;
+  letter-spacing: 1.5px;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+body {
+  font-size: 1.8em;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  word-spacing: 1.5px;
+}
+
+header {
+  text-align: center;
+}
+
+/* 每个标题后第一段文字设置20px缩进 */
+section h2 + p {
+  text-indent: 20px;
+}
+
+/* link part */
+a {
+  outline: none;
+}
+
+a:link {
+  color: #a66;
+}
+
+a:visited {
+  color: #a66;
+}
+
+a:focus {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  background-color: #a66;
+  color: white;
+}
+
+a[href*="http"] {
+  padding-right: 19px;
+  background: url(./external-link-52.png) no-repeat;
+  background-position: top right;
+  background-size: 16px;
+}
+
+/* list style */
+li {
+  line-height: 1.5;
+}
+
+ol li {
+  list-style: lower-alpha;
+}
+
+/* nav style */
+nav ul {
+  list-style: none;
+  margin-top: 0.8rem;
+}
+
+nav ul li {
+  margin-bottom: 2rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  border: 2px solid #a66;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  line-height: 3;
+  font-size: 1.5em;
+}
+
+nav li a:focus, nav li a:hover {
+  color: white;
+  background: #a66;
+}
