@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CSS Grid starting point</title>
+    <style>
+        body {
+            width: 90%;
+            max-width: 900px;
+            margin: 2em auto;
+            font: .9em/1.2 Arial, Helvetica, sans-serif;
+        }
+
+        .container > div {
+            border-radius: 5px;
+            padding: 10px;
+            background-color: rgb(207,232,220);
+            border: 2px solid rgb(79,185,227);
+        }
+
+        .container {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          /* grid-template-rows: repeat(1, 50px); */
+          grid-auto-rows: minmax(75px, auto);
+          /* > 简单来说，隐式网格就是为了放显式网格放不下的元素，浏览器根据已经定义的显式网格自动生成的网格部分。 */
+          grid-gap: 20px;
+
+          grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        }
+
+        #massive {
+          line-height: 8;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Simple grid example</h1>
+
+    <div class="container">
+        <div>One</div>
+        <div>Two</div>
+        <div>Three</div>
+        <div>Four</div>
+        <div>Five</div>
+        <div>Six</div>
+        <div>Seven</div>
+        <div id="massive">Massive</div>
+    </div>
+
+</body>
+
+</html>
