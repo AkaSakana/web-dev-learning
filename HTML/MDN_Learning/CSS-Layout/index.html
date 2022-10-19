@@ -31,8 +31,20 @@
         color: #fff;
       }
 
-      .cleared {
+      /* .cleared {
         clear: left;
+      } */
+
+      .wrapper {
+        background-color: rgb(79, 185, 227);
+        padding: 10px;
+        color: #fff;
+      }
+
+      .wrapper::after {
+        content: "";
+        clear: both;
+        display: block;
       }
     </style>
   </head>
@@ -40,14 +52,15 @@
   <body>
     <h1>Simple float example</h1>
 
-    <div class="box">Float</div>
-
-    <p class="special">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus
-      aliquam dolor, eu lacinia lorem placerat vulputate. Duis felis orci,
-      pulvinar id metus ut, rutrum luctus orci. Cras porttitor imperdiet nunc,
-      at ultricies tellus laoreet sit amet.
-    </p>
+    <div class="wrapper">
+      <div class="box">Float</div>
+      <p class="special">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus
+        aliquam dolor, eu lacinia lorem placerat vulputate. Duis felis orci,
+        pulvinar id metus ut, rutrum luctus orci. Cras porttitor imperdiet nunc,
+        at ultricies tellus laoreet sit amet.
+      </p>
+    </div>
 
     <p class="cleared">
       Sed auctor cursus massa at porta. Integer ligula ipsum, tristique sit amet
