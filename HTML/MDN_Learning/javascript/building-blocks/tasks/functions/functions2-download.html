@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <title>Functions: Task 2</title>
     <style>
       p {
@@ -21,36 +21,49 @@
   </head>
 
   <body>
+    <section class="preview"></section>
 
-    <section class="preview">
-
-    </section>
-
-    <canvas width="480" height="320">
-
-    </canvas>
-
+    <canvas width="480" height="320"> </canvas>
   </body>
   <script>
-    let names = ['Chris', 'Li Kang', 'Anne', 'Francesca', 'Mustafa', 'Tina', 'Bert', 'Jada']
-    let para = document.createElement('p');
+    let names = [
+      "Chris",
+      "Li Kang",
+      "Anne",
+      "Francesca",
+      "Mustafa",
+      "Tina",
+      "Bert",
+      "Jada",
+    ];
+    let para = document.createElement("p");
 
     // Add your code here
 
-    let canvas = document.querySelector('canvas');
-    let ctx = canvas.getContext('2d');
+    let canvas = document.querySelector("canvas");
+    let ctx = canvas.getContext("2d");
 
     let x = 50;
     let y = 60;
     let width = 100;
     let height = 75;
-    let color = 'blue';
+    let color = "blue";
 
     // Add your code here
 
+    function draw() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.fillStyle = color;
+      ctx.beginPath();
+      ctx.rect(x, y, width, height);
+      ctx.fill();
+      // ctx.fillRect(x, y, width, height);
+    }
+
+    draw();
+
     // Don't edit the code below here!
 
-    const section = document.querySelector('section');
+    const section = document.querySelector("section");
   </script>
-
 </html>

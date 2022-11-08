@@ -56,8 +56,9 @@
         videoBox.setAttribute('class','hidden');
       };
 
-      video.onclick = function() {
+      video.onclick = function(e) {
         video.play();
+        e.stopPropagation();
       };
 
     </script>

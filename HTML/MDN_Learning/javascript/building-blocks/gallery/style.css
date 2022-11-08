@@ -22,7 +22,8 @@ body {
   width: 640px;
   height: 480px;
   background-color: rgba(0,0,0,0);
-  transition-duration: 500ms;
+  /* add this to make it prettier */
+  transition-duration: 500ms; 
 }
 
 button {

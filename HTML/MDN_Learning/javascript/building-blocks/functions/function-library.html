@@ -1,24 +1,60 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <title>Function library example</title>
-  <style>
-    input {
-      font-size: 2em;
-      margin: 10px 1px 0;
-    }
-  </style>
-</head>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <title>Function library example</title>
+    <style>
+      input {
+        font-size: 2em;
+        margin: 10px 1px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <input class="numberInput" type="text" />
+    <p></p>
 
-  <input class="numberInput" type="text">
-  <p></p>
+    <script>
+      const input = document.querySelector(".numberInput");
+      const para = document.querySelector("p");
+      function squared(num) {
+        return num * num;
+      }
 
-  <script>
-    const input = document.querySelector('.numberInput');
-    const para = document.querySelector('p');
+      function cubed(num) {
+        return num * num * num;
+      }
 
-  </script>
-</body>
+      function factorial(num) {
+        var x = num;
+        while (x > 1) {
+          num *= x - 1;
+          x--;
+        }
+        return num;
+      }
+
+      function squareRoot(num) {
+        return Math.sqrt(num);
+      }
+
+      function cubeRoot(num) {
+        return Math.cbrt(num);
+      }
+
+      input.onchange = function () {
+        var num = input.value;
+        if (isNaN(num)) {
+          para.textContent = "You need to enter a number!";
+        } else {
+          para.textContent =
+          num + " squared is " + squared(num) + ". " +
+          num + " cubed is " + cubed(num) + ". " +
+          num + " factorial is " + factorial(num) + "." +
+          num + " square root is " + squareRoot(num) + '.' +
+          num + " cube root is " + cubeRoot(num) + '.';
+        }
+      };
+    </script>
+  </body>
 </html>
